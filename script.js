@@ -29,6 +29,33 @@ window.addEventListener("scroll", () => {
 });
 
 
+// Incontinência Urinária
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const sectionPDO = document.querySelector(".pdo-section");
+
+  if (!sectionPDO) return;
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+
+    });
+
+  }, {
+    threshold: 0.2
+  });
+
+  observer.observe(sectionPDO);
+
+});
+
 // Área de Atuação
 
 const premiumItems = document.querySelectorAll('.premium-item');
@@ -63,6 +90,27 @@ const signatureObserver = new IntersectionObserver(
 );
 
 signatureItems.forEach(item => signatureObserver.observe(item));
+
+
+// CONHEÇA NOSSO CONSULTÓRIO
+
+const slides = document.querySelectorAll(".clinic-fade img");
+
+let index = 0;
+
+setInterval(() => {
+
+  slides[index].classList.remove("active");
+
+  index++;
+
+  if(index >= slides.length){
+    index = 0;
+  }
+
+  slides[index].classList.add("active");
+
+}, 3800);
 
 
 // CTA
