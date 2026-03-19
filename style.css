@@ -493,11 +493,18 @@ h1,h2{
   position: absolute;
   inset: 0;
 
-  background: rgba(255, 255, 255, 0.439);
-
-  backdrop-filter: blur(2px); /* efeito vidro */
+  background: rgba(255, 255, 255, 0.75); /* mais sólido */
+  backdrop-filter: blur(2px);
 
   z-index: 1;
+}
+
+/* fallback mobile */
+
+@media (max-width: 768px){
+  .premium-procedures::before{
+    backdrop-filter: none;
+  }
 }
 
 section#agendar {
