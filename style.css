@@ -474,46 +474,7 @@ h1,h2{
    ATUAÇÃO
 ========================== */
 
-
 .premium-procedures {
-  position: relative;
-
-  background-image: url("consulta-ginecologica-preventiva.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  padding: 60px 24px 100px;
-  min-height: 400px;
-  overflow: hidden;
-}
-
-.premium-procedures::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(2px);
-
-  z-index: 1;
-}
-
-.premium-container{
-  position: relative;
-  z-index: 2;
-}
-
-/* mobile fix */
-
-@media (max-width: 768px){
-  .premium-procedures::before{
-    backdrop-filter: none;
-    background: rgba(255,255,255,0.85);
-  }
-}
-
-/*.premium-procedures {
   position: relative;
 
   background-image: url("consulta-ginecologica-preventiva.jpeg");
@@ -525,24 +486,36 @@ h1,h2{
   overflow: hidden;
 }
 
+/* película clara */
+
 .premium-procedures::before {
   content: "";
   position: absolute;
   inset: 0;
 
-  background: rgba(255, 255, 255, 0.75); 
+  background: rgba(255, 255, 255, 0.75); /* mais sólido */
   backdrop-filter: blur(2px);
 
   z-index: 1;
 }
 
+/* fallback mobile */
 
 @media (max-width: 768px){
-  .premium-procedures::before{
-    backdrop-filter: none;
+
+  .premium-procedures{
+    background-image: url("consulta-ginecologica-preventiva.jpeg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
   }
+
+  /* REMOVE o efeito vidro no mobile (ele quebra em vários aparelhos) */
+  .premium-procedures::before{
+    display: none !important;
+  }
+
 }
-*/
 
 section#agendar {
     background: #cec7b254 !important;
