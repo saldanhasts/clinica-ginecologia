@@ -477,12 +477,12 @@ h1,h2{
 .premium-procedures {
   position: relative;
 
-  background-image: url("consulta-ginecológica-preventiva.jpeg");
+  background-image: url("consulta-ginecoloogica-preventiva.jpeg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 
-  padding: 60px 24px 15px;
+  padding: 60px 24px 100px;
   overflow: hidden;
 }
 
@@ -561,7 +561,7 @@ section#agendar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 37px;
+  margin-top: 5opx;
 }
 
 .premium-item {
@@ -630,8 +630,9 @@ section#agendar {
 ========================== */
 
 .trust-numbers {
-  background: #b6aa8aa9;
+  background: #ffffff36;
   padding: 40px 8%;
+  border-radius: 15px;
 }
 
 .trust-container {
@@ -652,7 +653,7 @@ section#agendar {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 1.9rem;
   font-weight: 400;
-  color: #ffffff;
+  color: #474747;
   display: block;
   margin-bottom: 6px;
 }
@@ -661,7 +662,7 @@ section#agendar {
 .trust-label {
   font-size: 0.9rem;
   line-height: 1.5;
-  color: #ffffff;
+  color: #474747;
 }
 
 /* RESPONSIVO */
