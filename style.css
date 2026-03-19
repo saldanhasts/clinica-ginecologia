@@ -477,7 +477,7 @@ h1,h2{
 .premium-procedures {
   position: relative;
 
-  background-image: url("consulta-ginecoloogica-preventiva.jpeg");
+  background-image: url("consulta-ginecologica-preventiva.jpeg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -632,7 +632,7 @@ section#agendar {
 .trust-numbers {
   background: #ffffff36;
   padding: 40px 8%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .trust-container {
