@@ -1026,6 +1026,11 @@ h2.local {
   margin-bottom: 8px;
 }
 
+p.telefones-contato {
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+
 /* Ícones */
 .insta-socials {
   display: flex;
